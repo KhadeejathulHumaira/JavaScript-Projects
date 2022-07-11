@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <div class="container">
+        <div class="section">
+            <label for="total_bill">Bill Total</label>
+            <input  onkeyup="calculateBill()" type="number" id="bill_total" >
+        </div>
+        <div class="section">
+            <label for="tip_perc">Tip</label>
+            <input type="number"  onkeyup="calculateBill()" id="tips" placeholder="10" >
+        </div>
+        <div class="people_count">
+            <div class="people_div">
+                <p>People</p>
+                    <button id="increasePeopleCount" onclick="increaseCount()">+</button>
+                    <span id="noOfPeople">1</span>
+                    <button id="decreasePeopleCount" onclick="decreaseCount()">-</button>
+            </div>
+            <div class="Total_div">
+                <p>Total Per Person</p>
+                <p class="tot">$ <span id="totalPerPerson">100.00</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
