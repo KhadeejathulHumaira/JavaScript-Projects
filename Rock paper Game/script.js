@@ -9,7 +9,12 @@ const compOptions=['rock','paper','scissors'];
 let score=0;
 let res=0;
 
-
+//On clicking the buttons 
+//1) get the value of the button
+//2)get choice of computer 
+//3)give score accordingly
+//4)calculate the total score
+//5)display the results
 btns.forEach(btn=>{
     btn.addEventListener('click',(e)=>{
         let value=e.currentTarget.value;
@@ -20,7 +25,7 @@ btns.forEach(btn=>{
     })
 })
 
-
+//resets the score to 0
 reset.addEventListener('click',()=>{
     score=0;
     player.innerText='';
@@ -30,13 +35,15 @@ reset.addEventListener('click',()=>{
 })
 
 
-
+//Random choice is picked up from the compOptions array
 function getComputersChoice(options){
     indexNum=Math.floor(Math.random()*compOptions.length);
     return options[indexNum]
 }
 
 
+// This function will get the players choice and computers choice 
+//and set the results according to the conditions it match
 function getResult(playerChoice,computerChoice){
     if(playerChoice=='rock' && computerChoice=='paper' ){
         res=-1
@@ -56,7 +63,8 @@ function getResult(playerChoice,computerChoice){
 }
 
 
-
+//It takes the score players choice and computers choice 
+//as well as the result to display it on the screen
 function showResults(score,playerChoice,computerChoice,count){
     scoreCard.style.display='flex'
     player.innerText=playerChoice.toUpperCase();
