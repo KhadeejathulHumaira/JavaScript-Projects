@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero-container{
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+button{
+    font-size: 1.2rem;
+    font-weight:500;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width:200px;
+    align-self:center;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: crimson;
+}
+input{
+    border-radius: 10px;
+    height: 50px;
+    width:350px;
+    background-color: bisque;
+    border: none;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+input:focus{
+    outline: none;
+}
+h1{
+    align-self: center;
+}
+.searchDiv{
+    margin:15px;
+    align-self:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.searchDiv button{
+    margin-top: 5px;
+}
+#getHero{
+    margin-top: 4px; 
+}
+.names{
+    font-size:1.3rem ;
+    font-weight: 600;
+}
+.stats{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
