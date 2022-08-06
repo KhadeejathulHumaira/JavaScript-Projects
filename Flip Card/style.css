@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Noto Naskh Arabic',sans-serif;
+    margin:0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 90vh; 
+    margin: auto; 
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height:50px;
+    width: 150px;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'open sans';
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+button:hover{
+    background-color: black;
+    color:whitesmoke;
+    cursor: pointer;
+}
+.pronoun-container{
+    width:90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btns{
+    margin-bottom: 20px;
+}
+.grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns:repeat(3,300px);
+    grid-template-rows: repeat(2,300px);
+   justify-content: center;
+   align-content: center;
+   row-gap: 50px;
+   column-gap: 50px;
+   position: relative;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+  
+}
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card figure{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    text-align: center; 
+}
+.card .front{
+    background-color: rgb(148, 148, 213);
+    color: blanchedalmond;
+    position: absolute;
+    backface-visibility: hidden;
+   
+}
+.card .back{
+background-color: rgb(194, 105, 172);
+color: aliceblue;
+backface-visibility: hidden;
+transform: rotateY(180deg);
+}
+
+
+@media(max-width:600px) {
+    .grid{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(3,200px);
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media(max-width:375px) {
+    .grid{
+        grid-template-columns: repeat(2,150px);
+        grid-template-rows: repeat(3,150px);
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}

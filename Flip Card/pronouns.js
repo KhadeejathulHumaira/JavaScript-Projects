@@ -1,0 +1,33 @@
+const pronoun={
+    هُو:'He',
+    هما:'Both of Them',
+    هُم: 'They',
+    هي:'She',
+    هما:'Both of Them',
+    هنَّ:'Them Ladies',
+    أنتَ: 'You',
+    أنتُما:'Both of you',
+    أنتمْ:'All of you',
+    أنتِ:'You She',
+    أنتما:'Both of you',
+    أنتنَّ :'You all Ladies',
+    أنا:'I',
+    نحنُ:'We',
+    هِ:'He',
+    هُ:'He',
+    هُما:'Both of Them',
+    هِما:'Both of Them',
+    ها: 'She',
+    هُنَّ:'Them Ladies',
+    هِنَّ:'Them Ladies',
+    كَ:'You',
+    كِ:'You She',
+    كُما :'Both of You',
+    كُم :'All of You',
+    كُنَّ :'You All Ladies',
+    ني :'I',
+    ي:'I',
+    نا: 'We'            
+}
+
+export {pronoun};
