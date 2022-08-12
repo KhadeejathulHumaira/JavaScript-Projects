@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main" class="load">
+    <div class="container_top">
+        <h1 class="title">Weather App</h1>
+        <div class="search_div">
+            <input type="text" class="search" id="search">
+            <button class="btn" id="btn">🔍</button>
+        </div>
+       
+    </div>
+   <div class="container">
+    <section class="top">
+        <h1 id="curr_loc" class="heading">Chennai</h1>
+        <p class="place" id="place">Tamil Nadu,India</p>
+    </section>
+    <section class="middle">
+        <div class="col left">
+            <h2 class="status" id="todayWeather">clouds</h2>
+            <h1 class="heading" id="curr_deg">63<sup>0</sup></h1>
+            <p class="time" id="time">4:31am ,Thursday</p>
+            
+           
+        </div>
+        <div class="col right">
+            <h2 class="status">Tonight's Weather</h2>
+            <h1 class="heading" id="tonightWeather">Partly Cloudy</h1>
+            <p class="temp">High <span id="highTemp">73</span>&deg; &nbsp;&nbsp;Low <span id="lowTemp">63</span>&deg;</p>
+            <p class="slot">Sunrise <span id="sunrise">6:48AM</span>&nbsp;&nbsp; Sunset <span id="sunset">6:40PM</span></p>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="grid">
+            <!-- <p class="hour">Hourly</p> -->
+            <div class="cols col1">
+                <!-- <img src="" alt="">
+                <p class="hour" >5:30</p>
+                <p><span>60&deg;</span> <span>50&deg;</span></p> -->
+            </div>
+            <div class="cols">
+                <!-- <img src="" alt="">
+                <p class="hour" >5:30</p>
+                <p><span>60&deg;</span> <span>50&deg;</span></p> -->
+            </div>
+            <div class="cols">
+                <!-- <img src="" alt="">
+                <p class="hour" >5:30</p>
+                <p><span>60&deg;</span> <span>50&deg;</span></p> -->
+            </div>
+            <div class="cols">
+                <!-- <img src="" alt="">
+                <p class="hour" >5:30</p>
+                <p><span>60&deg;</span> <span>50&deg;</span></p> -->
+            </div>
+            <div class="cols">
+                <!-- <img src="" alt="">
+                <p class="hour" >5:30</p>
+                <p><span>60&deg;</span> <span>50&deg;</span></p> -->
+            </div>
+        </div>
+    </section>
+    
+   </div>
+   <script src="script.js"></script> 
+</body>
+</html>
